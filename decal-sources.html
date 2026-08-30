@@ -13,6 +13,16 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
+<style>
+@import url( "./style/every-page.css" );
+</style>
+
+<style>
+li {
+    cursor : pointer;
+}
+</style>
+
 <hr>
 <h1>Decal Sources</h1>
 <blockquote>
@@ -22,6 +32,7 @@ img { max-width: 100%; }
 <hr>
 <h1>Calliope Repo</h1>
 <ul>
+<li><a href="http://dave-omega/app/calliope/www/calliope/">Omega</a></li>
 <li><a href="http://dave-tower/app/calliope/www/calliope/">Tower</a></li>
 </ul>
 <hr>
@@ -104,10 +115,143 @@ img { max-width: 100%; }
 @ https://docs.google.com/spreadsheets/d/1RWnirEml0mwf1ZaCgU7o5NvP1tShjQ-5VBOvP8Sxk5A/edit?gid=1454662175#gid=1454662175</li>
 </ul>
 <hr>
+<ul>
+<li>Alphanumerics
+@ http://dave-omega/ncsem/ncsem/Alphanumerics.html</li>
+</ul>
+<hr>
+<ul>
+<li>Emoji Town
+@ https://docs.google.com/spreadsheets/d/1mjEPxbb0hd35WhazL7IVFR93jdRu9gCla43k2V9hhQM/edit?gid=2093494326#gid=2093494326</li>
+</ul>
+<hr>
+<ul>
+<li>Coding Emojis
+@ http://dave-omega/ncsem/pubs/ncsem/Coding-Emojis.html</li>
+</ul>
+<hr>
+<ul>
+<li>Reaction Emojis
+@ https://dreamyguy.github.io/react-emojis/</li>
+</ul>
+<hr>
+<ul>
+<li>Special Tokens
+@ http://dave-omega/ncsem/pubs/ncsem/Special-Tokens.html</li>
+</ul>
+<hr>
+<ul>
+<li>Compart Unicode
+@ https://www.compart.com/en/unicode</li>
+</ul>
+<hr>
+<ul>
+<li>Chrome Menu
+@ http://dave-omega/ncsem/pubs/chrome-menu.html</li>
+</ul>
+<hr>
+<ul>
+<li>Doc-Type Emojis
+@ http://dave-omega/ncsem/pubs/doc-emojis.html</li>
+</ul>
+<hr>
+<ul>
+<li>Game Pieces
+@ http://dave-omega/ncsem/pubs/game-pieces.html</li>
+</ul>
+<hr>
+<ul>
+<li>Kowabunga
+@ http://dave-omega/ncsem/pubs/kowabunga.html</li>
+</ul>
+<hr>
+<ul>
+<li>Tarzan's Critters
+@ ( pending )</li>
+</ul>
+<hr>
+<ul>
+<li>OS Decals
+@ http://dave-omega/ncsem/pubs/os.html</li>
+</ul>
+<hr>
+<ul>
+<li>Random Fun
+@ http://dave-omega/ncsem/pubs/random-fun.html</li>
+</ul>
+<hr>
+<ul>
+<li>Response Emojis
+@ http://dave-omega/ncsem/pubs/response-emoji.html</li>
+</ul>
+<hr>
+<ul>
+<li>Standard Theme Sets
+@ http://dave-omega/ncsem/pubs/std-theme-sets.html</li>
+</ul>
+<hr>
+<ul>
+<li>Vehical Decals
+@ http://dave-omega/ncsem/pubs/vehicle-emojis.html</li>
+</ul>
+<hr>
+<ul>
+<li>Weather Decals
+@ http://dave-omega/ncsem/pubs/weather-emojis.html</li>
+</ul>
+<hr>
+<ul>
+<li>Theme Sage Notebook
+@ https://onedrive.live.com/personal/a698f7622548fa93/_layouts/15/Doc.aspx?sourcedoc={2548fa93-f762-2098-80a6-983202000000}</li>
+</ul>
+<hr>
+<ul>
+<li>Werk Decals (Old)
+@ http://dave-omega/ncsem/pubs/werk-emojis-old.html</li>
+</ul>
+<hr>
+<ul>
+<li>Werk Decals
+@ http://dave-omega/ncsem/pubs/werk-emojis.html</li>
+</ul>
+<hr>
+<ul>
+<li>NCSEM
+@ http://dave-omega/ncsem/
+| Host := dave-omega</li>
+</ul>
 <hr>
 <script>
 ; doc = document
 ; doc . title = ( `Decal Sources` )
+</script>
+
+<script>
+function mine( ev ) {
+    ev.preventDefault();
+    ev.stopPropagation();
+}
+</script>
+
+<script>
+function minnie( event ) {
+    const ge = event.target;
+    if ( ge.nodeName !== "LI" ) {
+        return;
+    }
+    mine( event );
+    if ( event.ctrlKey ) {
+        prompt( "Item Content" , ge.textContent );
+        return;
+    } else {
+        alert( "Hold Down Control to View" );
+        return;
+    }
+}
+</script>
+
+<script>
+addEventListener( "click", minnie );
 </script>
 
 </body>
