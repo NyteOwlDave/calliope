@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+td, th { border: 1px solid #c3c3c3; padding: 0 3px 0 3px; }
+table { border-collapse: collapse; }
+img { max-width: 100%; }
+</style>
+<meta name="generator" content="ReText 7.2.3">
+<title>method-maps</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<style>
+@import url("https://nyteowldave.neocities.org/style.css");
+</style>
+
+<style>
+@import url("http://dave-omega/demo/style/sce-hud.css");
+</style>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<hr>
+<h1><code>{}</code> Method Maps</h1>
+<blockquote>
+<p><a href="http://dave-omega/calliope/" title="Calliope ~ Omega"><code>?</code> Calliope</a>
+<a href="http://dave-omega/calliope/notes/" title="Calliope's Notes ~ Omega"><code>?</code> Notes</a>
+<a href="http://dave-omega/calliope/notes/method-maps.html" title="Omega Edition"><code>?</code> Primary</a></p>
+<p><a href="./"><code>?</code> File System</a></p>
+</blockquote>
+<hr>
+<h2><code>⏩</code> Media Control</h2>
+<table>
+<thead>
+<tr>
+<th>Decal</th>
+<th>Typical Action</th>
+<th>Typical Method Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⬆️</td>
+<td>Scroll Up</td>
+<td>scroll_up</td>
+</tr>
+<tr>
+<td>➡️</td>
+<td>Scroll Right</td>
+<td>scroll_right</td>
+</tr>
+<tr>
+<td>⬇️</td>
+<td>Scroll Down</td>
+<td>scroll_down</td>
+</tr>
+<tr>
+<td>⬅️</td>
+<td>Scroll Left</td>
+<td>scroll_left</td>
+</tr>
+<tr>
+<td>◻️</td>
+<td>Zoom In</td>
+<td>scale_magnify</td>
+</tr>
+<tr>
+<td>▫️</td>
+<td>Zoom Out</td>
+<td>scale_reduce</td>
+</tr>
+<tr>
+<td>⏮️</td>
+<td>Home / First</td>
+<td>move_first</td>
+</tr>
+<tr>
+<td>⏪</td>
+<td>Previous Page</td>
+<td>move_prev</td>
+</tr>
+<tr>
+<td>⏩</td>
+<td>Next Page</td>
+<td>move_next</td>
+</tr>
+<tr>
+<td>⏭️</td>
+<td>End / Last</td>
+<td>move_last</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Accept Changes</td>
+<td>accept</td>
+</tr>
+<tr>
+<td>❎</td>
+<td>Reject Changes</td>
+<td>reject</td>
+</tr>
+<tr>
+<td>🔄</td>
+<td>Swap / Exchange</td>
+<td>swap</td>
+</tr>
+<tr>
+<td>⤵️</td>
+<td>Copy Down</td>
+<td>copy_down</td>
+</tr>
+<tr>
+<td>⤴️</td>
+<td>Copy Up</td>
+<td>copy_up</td>
+</tr>
+<tr>
+<td>💠</td>
+<td>Full Screen</td>
+<td>zoom</td>
+</tr>
+<tr>
+<td>🗑️</td>
+<td>Clear</td>
+<td>clear</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<header id="messages"></header>
+
+<footer id="footer">
+  <input id="footer_input" onchange="perform(event)" />
+</footer>
+
+<textarea id="sce" class="hud hide" wrap="off">
+</textarea>
+
+<hr>
+<script>
+; iwm = Object.keys( window ).sort()
+</script>
+
+<script>
+;
+; doc = document
+; doc . title
+= doc . querySelector( "H1" )
+. textContent
+;
+</script>
+
+<script>
+; cls =()=> console.clear()
+</script>
+
+<script>
+; loc = location
+; veer  =( h )=> ( loc.hostname = ( h ) )
+; again =(   )=> ( loc.reload() )
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<script src="https://nyteowldave.github.io/std/api/gems/prolog-beta.js"></script>
+<script src="http://dave-omega/demo/web/api/hud.js"></script>
+<script src="http://dave-omega/demo/web/gems/interpreter-lite.js"></script>
+<script src="http://dave-omega/demo/web/gems/houdini.js"></script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<script>
+footer_input.value = "hud()";
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+</body>
+</html>
